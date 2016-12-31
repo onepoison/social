@@ -19,6 +19,7 @@
 		825BCDDC1E098F5A00A78E59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825BCDDA1E098F5A00A78E59 /* LaunchScreen.storyboard */; };
 		825BCDE41E098FC100A78E59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 825BCDE31E098FC100A78E59 /* GoogleService-Info.plist */; };
 		8260CB121E17FF9C0078F6A7 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260CB111E17FF9C0078F6A7 /* CircleView.swift */; };
+		8260CB141E181CF20078F6A7 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260CB131E181CF20078F6A7 /* PostCell.swift */; };
 		82B98CF41E16487E00CEFD28 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B98CF31E16487E00CEFD28 /* FeedVC.swift */; };
 		F91757641F50634C5D67FB87 /* Pods_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B9184F955D4257F4D711BD /* Pods_Social.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		825BCDDD1E098F5A00A78E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		825BCDE31E098FC100A78E59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8260CB111E17FF9C0078F6A7 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		8260CB131E181CF20078F6A7 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		82B98CF31E16487E00CEFD28 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		82FC966E1E0C15A1000F5D3C /* Social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Social.entitlements; sourceTree = "<group>"; };
 		96B9184F955D4257F4D711BD /* Pods_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 				823EEADB1E0BD8A3005D5C9A /* FancyField.swift */,
 				823EEADD1E0BDB99005D5C9A /* FancyBtn.swift */,
 				8260CB111E17FF9C0078F6A7 /* CircleView.swift */,
+				8260CB131E181CF20078F6A7 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				823EEAD51E0BCA7A005D5C9A /* FancyView.swift in Sources */,
 				823EEAD81E0BCB2F005D5C9A /* Contants.swift in Sources */,
 				823EEADE1E0BDB99005D5C9A /* FancyBtn.swift in Sources */,
+				8260CB141E181CF20078F6A7 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
