@@ -21,6 +21,7 @@
 		8260CB121E17FF9C0078F6A7 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260CB111E17FF9C0078F6A7 /* CircleView.swift */; };
 		8260CB141E181CF20078F6A7 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260CB131E181CF20078F6A7 /* PostCell.swift */; };
 		8260CB171E1967620078F6A7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260CB161E1967620078F6A7 /* DataService.swift */; };
+		82A517081E1AB3DE0037AA3E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A517071E1AB3DE0037AA3E /* Post.swift */; };
 		82B98CF41E16487E00CEFD28 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B98CF31E16487E00CEFD28 /* FeedVC.swift */; };
 		F91757641F50634C5D67FB87 /* Pods_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B9184F955D4257F4D711BD /* Pods_Social.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		8260CB111E17FF9C0078F6A7 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		8260CB131E181CF20078F6A7 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		8260CB161E1967620078F6A7 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		82A517071E1AB3DE0037AA3E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		82B98CF31E16487E00CEFD28 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		82FC966E1E0C15A1000F5D3C /* Social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Social.entitlements; sourceTree = "<group>"; };
 		96B9184F955D4257F4D711BD /* Pods_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 		826FB9581E09928E00D64528 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				82A517071E1AB3DE0037AA3E /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				8260CB121E17FF9C0078F6A7 /* CircleView.swift in Sources */,
 				823EEADC1E0BD8A3005D5C9A /* FancyField.swift in Sources */,
 				825BCDD41E098F5A00A78E59 /* SignInVC.swift in Sources */,
+				82A517081E1AB3DE0037AA3E /* Post.swift in Sources */,
 				823EEADA1E0BCD47005D5C9A /* RoundBtn.swift in Sources */,
 				825BCDD21E098F5A00A78E59 /* AppDelegate.swift in Sources */,
 				8260CB171E1967620078F6A7 /* DataService.swift in Sources */,
@@ -421,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0EE8F308AC0772DF9289AD81 /* Pods-Social.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Social/Social.entitlements;
 				DEVELOPMENT_TEAM = 6PNHYCYLK2;
@@ -436,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7EB2356608FEE26A1AF16F5C /* Pods-Social.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Social/Social.entitlements;
 				DEVELOPMENT_TEAM = 6PNHYCYLK2;
