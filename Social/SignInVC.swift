@@ -60,7 +60,9 @@ class SignInVC: UIViewController {
                 print("Yujin: Successfully authenticated with Firebase")
                 
                 if let user = user {
-                    self.completeSignIn(id: user.uid)
+                    
+                    let userData = ["provider": credential.providerID]
+                    self.completeSignIn(id: user.uid, userData: userData)
                 }
                 
                 
@@ -77,7 +79,8 @@ class SignInVC: UIViewController {
                 if error == nil {
                     print("Yujin: User email authenticated with Firebase")
                     if let user = user {
-                        self.completeSignIn(id: user.uid)
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid,userData: userData)
                     }
                     
                 } else {
@@ -87,7 +90,8 @@ class SignInVC: UIViewController {
                         } else {
                             print("Yujin: Successfully authenticated with Firebase")
                             if let user = user {
-                                self.completeSignIn(id: user.uid)
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid,userData: userData)
                             }
                             
                         }
@@ -98,8 +102,8 @@ class SignInVC: UIViewController {
         }
     }
     
-    func completeSignIn (id: String) {
-        
+    func completeSignIn (id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("Yujin : Data saved to Keychain \(keychainResult)")
         

@@ -20,6 +20,7 @@
 		825BCDE41E098FC100A78E59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 825BCDE31E098FC100A78E59 /* GoogleService-Info.plist */; };
 		8260CB121E17FF9C0078F6A7 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260CB111E17FF9C0078F6A7 /* CircleView.swift */; };
 		8260CB141E181CF20078F6A7 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260CB131E181CF20078F6A7 /* PostCell.swift */; };
+		8260CB171E1967620078F6A7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260CB161E1967620078F6A7 /* DataService.swift */; };
 		82B98CF41E16487E00CEFD28 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B98CF31E16487E00CEFD28 /* FeedVC.swift */; };
 		F91757641F50634C5D67FB87 /* Pods_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B9184F955D4257F4D711BD /* Pods_Social.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		825BCDE31E098FC100A78E59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8260CB111E17FF9C0078F6A7 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		8260CB131E181CF20078F6A7 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		8260CB161E1967620078F6A7 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		82B98CF31E16487E00CEFD28 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		82FC966E1E0C15A1000F5D3C /* Social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Social.entitlements; sourceTree = "<group>"; };
 		96B9184F955D4257F4D711BD /* Pods_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 		825BCDD01E098F5A00A78E59 /* Social */ = {
 			isa = PBXGroup;
 			children = (
+				8260CB151E1967540078F6A7 /* Services */,
 				82FC966E1E0C15A1000F5D3C /* Social.entitlements */,
 				823EEAD61E0BCB1B005D5C9A /* Util */,
 				826FB9581E09928E00D64528 /* Model */,
@@ -109,6 +112,14 @@
 				825BCDDD1E098F5A00A78E59 /* Info.plist */,
 			);
 			path = Social;
+			sourceTree = "<group>";
+		};
+		8260CB151E1967540078F6A7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8260CB161E1967620078F6A7 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		826FB9581E09928E00D64528 /* Model */ = {
@@ -284,6 +295,7 @@
 				825BCDD41E098F5A00A78E59 /* SignInVC.swift in Sources */,
 				823EEADA1E0BCD47005D5C9A /* RoundBtn.swift in Sources */,
 				825BCDD21E098F5A00A78E59 /* AppDelegate.swift in Sources */,
+				8260CB171E1967620078F6A7 /* DataService.swift in Sources */,
 				82B98CF41E16487E00CEFD28 /* FeedVC.swift in Sources */,
 				823EEAD51E0BCA7A005D5C9A /* FancyView.swift in Sources */,
 				823EEAD81E0BCB2F005D5C9A /* Contants.swift in Sources */,

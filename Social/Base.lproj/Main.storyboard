@@ -149,12 +149,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XX8-OV-RcW" customClass="FancyView" customModule="Social" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="MGH-74-Qzg">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="MGH-74-Qzg">
                                         <rect key="frame" x="16" y="20" width="45" height="38"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="OOs-PB-5f4"/>
                                             <constraint firstAttribute="width" constant="45" id="jdC-pH-bJD"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="32f-oF-GRJ" appends="YES" id="WLP-Fg-kCj"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmH-0c-JOa">
                                         <rect key="frame" x="158.5" y="21" width="59.5" height="36"/>
@@ -222,7 +226,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="313"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BKF-8t-Mz1" id="J1S-B1-uUO">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="312"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="313"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIF-bC-elh" customClass="FancyView" customModule="Social" customModuleProvider="target">
@@ -341,6 +345,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bax-NU-ypC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="32f-oF-GRJ">
+                    <connections>
+                        <action selector="signOutTapped:" destination="IWR-PU-ogt" id="6vc-Mg-6lI"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1012" y="134.48275862068968"/>
         </scene>
